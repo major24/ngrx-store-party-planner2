@@ -1,0 +1,11 @@
+<p>
+  counter-dashboard works!
+</p>
+<div>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+    <button (click)="reset()">Reset Counter</button>
+
+    <div>Current Count: {{ counter | async }}</div>
+    <div>Current Count: {{ counterValue }} - {{desc}}</div>
+</div>

@@ -1,0 +1,25 @@
+<div>
+  This party test has a primary guest. 
+  <br />Each primary guest can have zero or more secondary guests.
+  <br />All details is displayed in party component.
+</div>
+<hr />
+<div>
+  Primary Guest Name: <input #primaryGuestName type="text" value="Major" />
+  <button (click)="addPrimaryGuest(primaryGuestName)">Add Primary Guest</button>
+</div>
+<hr />
+
+<app-primary-guest 
+        [primaryGuests]="primaryGuests"></app-primary-guest>
+<hr />
+
+<div>
+  <p>Current Secondary List</p>
+  <ul *ngFor="let secondary of secondaryGuests">
+    <li>{{secondary.id}} - {{secondary.name}} 
+    </li>
+  </ul>
+</div>
+
+

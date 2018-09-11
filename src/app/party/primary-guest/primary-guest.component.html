@@ -1,0 +1,9 @@
+
+<div>
+  <p>Current Primary List</p>
+  <ul *ngFor="let primary of primaryGuests">
+    <li>{{primary.id}} - {{primary.name}} - Sec.GstIds: {{primary.guestIds}}
+      <button [routerLink]="['add-secondary-guest', primary.id]">Add Secondary Guest</button>
+    </li>
+  </ul>
+</div>

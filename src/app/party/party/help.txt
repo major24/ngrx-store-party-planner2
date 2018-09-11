@@ -1,0 +1,16 @@
+
+party
+primary guest - Main person
+    secondary guest - Main persons friends/family
+
+24, Major Nalliah, 
+guestCount: 0
+guestType: P, 
+guests: []
+
+30, Jackson M, 
+guestType: S
+
+// interfaces
+PrimaryGuest
+SecondaryGuest
